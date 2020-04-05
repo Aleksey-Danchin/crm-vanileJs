@@ -20,6 +20,7 @@
         save()
         api.emit('update')
     }
+    
     api.updateOrderById = function updateOrderById (orderId, updated) {
         const order = database.orders.find(x => x.id === orderId) //ищем заказ по ID
 
